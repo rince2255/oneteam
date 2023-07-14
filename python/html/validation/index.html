@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+
+    <form id="create-account" onsubmit="return validateForm()">
+        <div class="title">
+            <h2>Create Account</h2>
+
+        </div>
+
+        <!-- user name -->
+
+        <div class="input-group">
+            <label for="username">Name : </label>
+            <input type="text" id="username" placeholder="Name" name="username">
+            <i class=" fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>error message</p>
+
+        </div>
+        <!-- email -->
+        <div class="input-group">
+            <label for="username">Email : </label>
+            <input type="email" id="email" placeholder="Email" name="email">
+            <i class=" fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>error message</p>
+
+        </div>
+        <!-- password -->
+        <div class="input-group ">
+            <label for="username">Password : </label>
+            <input type="password" id="password" placeholder="Password" name="password">
+            <i class=" fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>error message</p>
+
+        </div>
+        <!-- confirm password -->
+        <div class="input-group">
+            <label for="username">Confirm Password : </label>
+            <input type="password" id="cpassword" placeholder="Re-enter Password" name="cpassword">
+            <i class=" fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>error message</p>
+
+        </div>
+
+        <button type="Submit" class="btn">Submit</button>
+    </form>
+
+
+    <!-- <i class=" fa-solid fa-circle-check"></i> -->
+    <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
+
+</body>
+
+</html>

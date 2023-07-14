@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Salary calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="p2p_task13.css">
+    <style>
+
+    </style>
+    <script src="netSalary.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="margin-bottom: 50px;">Salary Calculator</h1>
+        <form>
+            <div class="form-group">
+                <label for="basicSalary">Basic Salary : </label>
+                <input type="number" class="form-control" id="basicSalary" placeholder="Enter basic salary" required>
+
+                <label for="basicSalary">No of night shifts : </label>
+                <input type="number" class="form-control" id="night" placeholder="Enter the days of night shifs"
+                    required>
+
+            </div>
+
+
+            <button type="button" class="btn btn-primary" onclick="calculateNetSalary()">Calculate Net
+                Salary</button>
+        </form>
+        <div id="netSalary">
+            <p>Net Salary : <input id="result" size="30"></p>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
